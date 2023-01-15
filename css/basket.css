@@ -296,13 +296,14 @@ html {
     position: absolute;
     background: #ffffff;
     display: block;
-    top: 170px;
-    height: 486px;
+    top: 140px;
+    max-height: 100vh;
     left: -100%;
     width: 100%;
     transition: 0.5s;
   }
   #navbar-responsive a {
+    padding: 15px 0;
     display: inline-block;
     width: 100%;
     font-weight: 500;
@@ -310,7 +311,6 @@ html {
     line-height: 130%;
     color: #000000;
     transition: 0.3s;
-    padding: 30px 0;
   }
   #navbar-responsive a:hover {
     color: #fc42ff;
@@ -323,9 +323,35 @@ html {
     height: 100vh;
     list-style-type: none;
   }
+  #navbar-responsive ul p {
+    padding-top: 10px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 130%;
+    color: #7e7e7e;
+  }
+  #navbar-responsive ul .responsive-contact {
+    border-top: 1px solid #eeeeee;
+    padding-top: 5px;
+  }
+  #navbar-responsive ul .responsive-contact a {
+    padding: 0;
+    font-weight: 600;
+    font-size: 33px;
+    line-height: 130%;
+    color: #000000;
+  }
+  #navbar-responsive ul .responsive-contact__icons {
+    padding-top: 7px;
+    display: flex;
+    gap: 20px;
+  }
+  #navbar-responsive ul .responsive-contact__icons a {
+    padding: 0;
+  }
   #close-navbar {
     position: absolute;
-    top: 70px;
+    top: 56px;
     right: 21px;
     background-color: transparent;
     border: none;
