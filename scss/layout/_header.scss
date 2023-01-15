@@ -186,8 +186,10 @@ html {
     display: none;
   }
   .nav__bottom {
+    padding: 8px;
     gap: 40px;
     overflow-x: scroll;
+    overflow-y: hidden;
     &-logo {
       display: block;
     }
