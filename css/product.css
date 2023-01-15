@@ -297,10 +297,12 @@ html {
     background: #ffffff;
     display: block;
     top: 140px;
-    max-height: 100vh;
+    max-height: 500px;
     left: -100%;
     width: 100%;
     transition: 0.5s;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
   }
   #navbar-responsive a {
     padding: 15px 0;
