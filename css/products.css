@@ -219,8 +219,17 @@ html {
   a {
     white-space: nowrap;
   }
+  .flex {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  .nav__bottom::-webkit-scrollbar {
+    display: none;
+  }
   .nav__bottom {
     gap: 40px;
+    overflow-x: scroll;
   }
   .nav__bottom-logo {
     display: block;

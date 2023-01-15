@@ -219,8 +219,17 @@ html {
   a {
     white-space: nowrap;
   }
+  .flex {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  .nav__bottom::-webkit-scrollbar {
+    display: none;
+  }
   .nav__bottom {
     gap: 40px;
+    overflow-x: scroll;
   }
   .nav__bottom-logo {
     display: block;
@@ -764,22 +773,22 @@ html {
   background: linear-gradient(262.69deg, #ca4acb -0.43%, #f088f2 104.36%);
   display: flex;
 }
-#discount .discount .discount-img img {
-  margin-top: -75px;
-}
-@media (max-width: 550px) {
-  #discount .discount .discount-img img {
-    width: 100%;
+@media (max-width: 700px) {
+  #discount .discount .discount-img {
+    display: none;
     margin: 0;
   }
 }
-@media (max-width: 500px) {
-  #discount .discount .discount-img img {
-    width: 80%;
-  }
+#discount .discount .discount-img img {
+  margin-top: -75px;
 }
 #discount .discount .discount-left {
   padding: 44px 160px 44px 0;
+}
+@media (max-width: 700px) {
+  #discount .discount .discount-left {
+    padding: 44px 0;
+  }
 }
 #discount .discount .discount-left__heading {
   margin-bottom: 46px;

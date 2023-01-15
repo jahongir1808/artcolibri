@@ -85,19 +85,19 @@
     background: linear-gradient(262.69deg, #ca4acb -0.43%, #f088f2 104.36%);
     display: flex;
     .discount-img {
+      @media (max-width: 700px) {
+        display: none;
+        margin: 0;
+      }
       img {
         margin-top: -75px;
-        @media (max-width: 550px) {
-          width: 100%;
-          margin: 0;
-        }
-        @media (max-width: 500px) {
-          width: 80%;
-        }
       }
     }
     .discount-left {
       padding: 44px 160px 44px 0;
+      @media (max-width: 700px) {
+        padding: 44px 0;
+      }
       &__heading {
         margin-bottom: 46px;
         h1 {
