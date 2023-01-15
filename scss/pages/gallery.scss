@@ -1,0 +1,24 @@
+@use "../global.scss";
+
+#gallery {
+  padding-top: 170px;
+  .gallery {
+    &-content {
+      margin-top: 20px;
+      display: flex;
+      gap: 7px;
+    }
+    &-rows {
+        margin-top: 40px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 35px 30px;
+        @media (max-width: 500px) {
+            grid-template-columns: 1fr;
+          }
+        img {
+            width: 100%;
+        }
+    }
+  }
+}

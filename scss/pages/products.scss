@@ -1,0 +1,87 @@
+@use "../global.scss";
+@use "../components/popular-categorytwo";
+
+.bestsellers-top {
+  padding-top: 180px;
+}
+
+.row-top {
+  display: grid;
+  grid-row-gap: 35px;
+}
+
+.bestsellers__content {
+  h1 {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 130%;
+    letter-spacing: 0.03em;
+    color: #000000;
+  }
+  &-text {
+    margin: 20px 0 40px;
+    display: flex;
+    gap: 12px;
+    @media (max-width: 450px) {
+      flex-direction: column;
+    }
+    p {
+      font-weight: 500;
+      line-height: 130%;
+      color: #000000;
+    }
+    a {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 130%;
+      color: #000000;
+    }
+  }
+  &-inputs {
+    margin-bottom: 46px;
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 40px;
+    @media (max-width: 1065px) {
+      grid-template-columns: repeat(1, 1fr);
+      grid-row-gap: 50px;
+    }
+    form {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      @media (max-width: 450px) {
+        flex-direction: column;
+        align-items: start;
+      }
+      label {
+        white-space: nowrap;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 130%;
+        letter-spacing: 0.03em;
+        color: #000000;
+      }
+      input {
+        padding: 10px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 130%;
+        letter-spacing: 0.03em;
+        color: #acacac;
+        border: 1px solid #000000;
+        border-radius: 7px;
+      }
+      .price {
+        max-width: 103px;
+      }
+      .products {
+        max-width: 40px;
+      }
+      .default {
+        max-width: 219px;
+      }
+    }
+  }
+}
