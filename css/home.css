@@ -525,12 +525,22 @@ html {
   gap: 20px;
   margin-bottom: 20px;
 }
+@media (max-width: 450px) {
+  #popular .popular__heading {
+    flex-direction: column;
+  }
+}
 #popular .popular__heading h1 {
   font-weight: 700;
   font-size: 40px;
   line-height: 130%;
   letter-spacing: 0.03em;
   color: #000000;
+}
+@media (max-width: 450px) {
+  #popular .popular__heading h1 {
+    font-size: 33px;
+  }
 }
 #popular .popular__heading-text {
   margin-top: 20px;
